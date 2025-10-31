@@ -8,7 +8,8 @@ You’ll update your progress weekly **in the same PR**, so mentors and reviewer
 
 
 ##  Project Title
-Praxy
+**PraxY**:
+Integrating AI, Blockchain, and zkProofs for Secure and Scalable Medical Assistance
 
 ## Team
 - Team/Individual Name: Claudia Gutierrez, Benjamin Barahona, Jorge Destephen
@@ -16,18 +17,29 @@ Praxy
 - Devfolio Handles: smilehi, BenBarahona, jdestephen
 
 ## Project Description
-_What are you building and why does it matter? Explain the core problem and your proposed solution._
+PraxY is a medical artificial intelligence agent designed to act as a digital clone of a 
+Medical Director or Head Physician.
 
+The agent is trained with institutional knowledge, clinical experience, and specific medical 
+literature relevant to the area of practice.
+
+Its goal is to provide continuous assistance to medical and administrative staff through an 
+accessible WhatsApp interface, offering feedback and recommendations aligned with 
+institutional protocols.
+
+By integrating **blockchain**, **zkID**, and the **Nillion** network, PraxY guarantees security, traceability, 
+and data integrity across all interactions and decisions
 
 
 ## Tech Stack
-_List all the technologies, frameworks, and tools you are using._
-
+ - Solidity
+ - Cricomjs
+ - Nillion Network
+ - Whatsapp API
 
 
 ## Objectives
-_What are the specific outcomes you aim to achieve by the end of ARG25?_
-
+Build a Proof of Concept of PraxY using Nillion AI integration + zkID validation + On-chain validation.
 
 
 ## Weekly Progress
