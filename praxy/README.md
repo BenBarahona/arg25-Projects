@@ -12,7 +12,7 @@ Praxy
 
 ## Team
 - Team/Individual Name: Claudia Gutierrez, Benjamin Barahona, Jorge Destephen
-- GitHub Handles: smilehi, BenBarahona, jdestephen
+- GitHub Handles: lolo22, BenBarahona, jdestephen
 - Devfolio Handles: smilehi, BenBarahona, jdestephen
 
 ## Project Description
