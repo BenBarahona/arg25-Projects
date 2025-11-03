@@ -13,7 +13,7 @@ Integrating AI, Blockchain, and zkProofs for Secure and Scalable Medical Assista
 
 ## Team
 - Team/Individual Name: Claudia Gutierrez, Benjamin Barahona, Jorge Destephen
-- GitHub Handles: lolo22, BenBarahona, jdestephen
+- GitHub Handles: 22lolo, BenBarahona, jdestephen
 - Devfolio Handles: smilehi, BenBarahona, jdestephen
 
 ## Project Description
