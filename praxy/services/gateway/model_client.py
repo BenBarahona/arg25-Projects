@@ -1,4 +1,4 @@
-import httpx, os
+""" import httpx, os
 
 
 BASE = os.getenv('VLLM_BASE_URL','http://localhost:8000/v1')
@@ -17,3 +17,4 @@ async def chat(prompt: str, system: str = "You are a medical assistant.") -> str
         r.raise_for_status()
     
     return r.json()["choices"][0]["message"]["content"].strip()
+"""

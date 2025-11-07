@@ -1,4 +1,4 @@
-from qdrant_client import QdrantClient
+""" from qdrant_client import QdrantClient
 from qdrant_client.models import Filter, FieldCondition, MatchValue
 import numpy as np, os, hashlib
 
@@ -32,3 +32,5 @@ def retrieved_docs_hash(points):
 def search(embedding: np.ndarray, top_k=5):
     r = client.search(collection_name=COLL, query_vector=embedding.tolist(), limit=top_k)
     return r
+
+"""    

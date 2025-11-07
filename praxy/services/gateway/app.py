@@ -1,27 +1,31 @@
 import os, time
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+## from pydantic import BaseModel
 from dotenv import load_dotenv
-from .rag import search, retrieved_docs_hash
-from .model_client import chat
-from web3 import Web3
+## from .rag import search, retrieved_docs_hash
+## from .model_client import chat
+## from web3 import Web3
 
 load_dotenv()
 
 
 app = FastAPI()
-w3 = Web3(Web3.HTTPProvider(os.getenv('RPC_URL')))
+""" w3 = Web3(Web3.HTTPProvider(os.getenv('RPC_URL')))
 AUDIT_CONTRACT = Web3.to_checksum_address(os.getenv('AUDIT_CONTRACT'))
 AUDITOR_PK = bytes.fromhex(os.getenv('AUDITOR_PK_HEX'))
 POLICY = os.getenv('POLICY_VERSION', 'med-policy-v1')
-MODEL_ID = os.getenv('MODEL_ID','llama3')
+MODEL_ID = os.getenv('MODEL_ID','llama3') """
 
-class Query(BaseModel):
+""" class Query(BaseModel):
     presentation_token: str
     query: str
-    embedding: list[float]
+    embedding: list[float] """
 
-@app.post("/query")
+@app.get("/")
+async def get_query():
+    return {"message": "Hello World"}
+
+"""@app.post("/")
 async def handle(q: Query):
     # (TODO) Verify doctor's/nurse's proof or auth token
 
@@ -68,4 +72,4 @@ async def handle(q: Query):
         'timestamp': ts
         },
         'retrieval': [{'id': p.id, 'score': p.score} for p in points]
-    }
+    } """
