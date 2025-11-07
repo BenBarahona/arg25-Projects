@@ -153,8 +153,6 @@ Document ingestion pipeline that:
 
 ---
 
----
-
 ### 🗓️ Week 3 (ends Nov 14)
 
 **Goals:**
