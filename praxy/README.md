@@ -164,6 +164,8 @@ Document ingestion pipeline that:
 _After Week 3, summarize your final state: deliverables, repo links, and outcomes._
 
 - **Main Repository Link:**
+  https://github.com/BenBarahona/invisible_garden_praxy
+
 - **Demo / Deployment Link (if any):**
 - **Slides / Presentation (if any):**
 
