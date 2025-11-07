@@ -5,82 +5,97 @@ Welcome to Invisible Garden- ARG25.
 Each participant or team will maintain this README throughout the program.  
 You’ll update your progress weekly **in the same PR**, so mentors and reviewers can track your journey end-to-end.
 
+## Project Title
 
-
-##  Project Title
 **PraxY**:
 Integrating AI, Blockchain, and zkProofs for Secure and Scalable Medical Assistance
 
 ## Team
-- Team/Individual Name: Claudia Gutierrez, Benjamin Barahona, Jorge Destephen
-- GitHub Handles: 22lolo, BenBarahona, jdestephen
-- Devfolio Handles: smilehi, BenBarahona, jdestephen
+
+- **Claudia Gutierrez** - [GitHub: @22lolo](https://github.com/22lolo) - [Devfolio: @smilehi](https://devfolio.co/@smilehi)
+- **Benjamin Barahona** - [GitHub: @BenBarahona](https://github.com/BenBarahona) - [Devfolio: @BenBarahona](https://devfolio.co/@BenBarahona)
+- **Jorge Destephen** - [GitHub: @jdestephen](https://github.com/jdestephen) - [Devfolio: @jdestephen](https://devfolio.co/@jdestephen)
 
 ## Project Description
-PraxY is a medical artificial intelligence agent designed to act as a digital clone of a 
+
+PraxY is a medical artificial intelligence agent designed to act as a digital clone of a
 Medical Director or Head Physician.
 
-The agent is trained with institutional knowledge, clinical experience, and specific medical 
+The agent is trained with institutional knowledge, clinical experience, and specific medical
 literature relevant to the area of practice.
 
-Its goal is to provide continuous assistance to medical and administrative staff through an 
-accessible WhatsApp interface, offering feedback and recommendations aligned with 
+Its goal is to provide continuous assistance to medical and administrative staff through an
+accessible messaging application interface (such as Telegram), offering feedback and recommendations aligned with
 institutional protocols.
 
-By integrating **blockchain**, **zkID**, and the **Nillion** network, PraxY guarantees security, traceability, 
-and data integrity across all interactions and decisions
-
+In order to have access to the chat, users will verify via zkID they are indeed a licence practicioner.
 
 ## Tech Stack
- - Solidity
- - Cricomjs
- - Nillion Network
- - Whatsapp API
 
+- **Docker** - Container orchestration and deployment
+- **React** - Frontend framework
+- **Python** - Backend development
+- **Stylus** - Smart Contract development
 
 ## Objectives
-Build a Proof of Concept of PraxY using Nillion AI integration + zkID validation + On-chain validation.
 
+Build a Proof of Concept of PraxY using AI integration + zkID validation + On-chain validation.
 
 ## Weekly Progress
 
 ### Week 1 (ends Oct 31)
+
 **Goals:**
 
-**Progress Summary:**  
+- Refine the core product idea and ensure problem-solution fit
+- Define the architecture, tools, and overall application flow
+- Identify gaps or risks in the project concept
 
+**Progress Summary:**
+
+Refined the concept based on team feedback to ensure viability without storing excessive user data
+
+- Defined the initial project structure and drafted a high-level user flow
+- Began outlining the core components of the solution:
+  - **zkID** for user authentication
+  - **AI chatbot** for secure chat responses
+  - **Stylus-based smart contracts** for verifiable chat integrity (still under exploration)
+- Started defining how the AI model will be fed data and operate within the system
+- Explored tools such as Nillion and zkID. **Nillion was discarded due to difficulties obtaining an API key**
+- Began exploring **vLLM** as the AI model runtime
+- Early plans established for:
+  - Using zkID as the entry point into a Telegram-based chat
+  - Integrating an AI chatbot into that chat
+  - Building a simple frontend splash screen for onboarding
+- Overall, strong progress was made on architecture clarification, tool research, and defining the solution approach before development begins
 
 ### Week 2 (ends Nov 7)
-**Goals:**  
- 
-**Progress Summary:**  
 
+**Goals:**
+
+**Progress Summary:**
 
 ### 🗓️ Week 3 (ends Nov 14)
-**Goals:**  
 
-**Progress Summary:**  
+**Goals:**
 
-
+**Progress Summary:**
 
 ## Final Wrap-Up
+
 _After Week 3, summarize your final state: deliverables, repo links, and outcomes._
 
-- **Main Repository Link:**  
-- **Demo / Deployment Link (if any):**  
+- **Main Repository Link:**
+- **Demo / Deployment Link (if any):**
 - **Slides / Presentation (if any):**
 
-
-
 ## 🧾 Learnings
+
 _What did you learn or improve during ARG25?_
 
-
-
 ## Next Steps
+
 _If you plan to continue development beyond ARG25, what’s next?_
-
-
 
 _This template is part of the [ARG25 Projects Repository](https://github.com/invisible-garden/arg25-projects)._  
 _Update this file weekly by committing and pushing to your fork, then raising a PR at the end of each week._
