@@ -73,7 +73,93 @@ Refined the concept based on team feedback to ensure viability without storing e
 
 **Goals:**
 
+- Begin MVP
+- Create chatbot and Telegram Integration
+- Simple frontend for Authentication
+- Explore LLM options for chatbot communication
+
 **Progress Summary:**
+
+## Current Architecture
+
+### 1. Frontend (`index.html`)
+
+- Telegram deeplink integration
+- Links for group join, messaging, and content sharing
+
+---
+
+### 2. Simple Backend (`app.py`)
+
+Basic Flask API server:
+
+- Serves the frontend (`index.html`)
+- Endpoints: `/api`, `/health`, `/api/hello`, `/api/echo`
+
+---
+
+### 3. Telegram Bot (`services/telegram_bot.py`)
+
+Implemented Commands:
+
+- `/start` – Welcome
+- `/help` – Usage guide
+- `/info` – About PraxY
+- `/ask` – Question handling
+  Includes logging, error handling, and setup guide (`TELEGRAM_SETUP.md`)
+
+---
+
+### 4. Microservices (`docker-compose.yml`)
+
+Current service definitions:
+
+- **Qdrant**: Vector storage for RAG
+- **vLLM**: Local LLM inference engine
+- **Gateway**: Intended coordination service
+
+---
+
+### 5. Gateway Service (`services/gateway/`)
+
+(Skeleton Only)
+Present but non-functional files:
+
+- `app.py` – Basic FastAPI structure
+- `rag.py` – Retrieval functions (commented)
+- `model_client.py` – AI client (commented)
+- `crypto_audit.py` – Empty
+
+Intended features:
+
+- RAG query handling
+- Blockchain audit trail
+- Secure onboarding and verification
+- Web3 integration
+
+---
+
+### 6. Indexer Service (`services/indexer/`)
+
+Document ingestion pipeline that:
+
+- Loads medical documents
+- Generates placeholder embeddings
+- Encrypts text via AES-GCM
+- Computes verification hashes
+- Uploads to Qdrant vector DB
+
+---
+
+## Dependencies & Configuration
+
+### Installed
+
+- Flask + CORS
+- python-telegram-bot
+- python-dotenv
+
+---
 
 ### 🗓️ Week 3 (ends Nov 14)
 
