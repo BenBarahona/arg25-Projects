@@ -80,6 +80,8 @@ Refined the concept based on team feedback to ensure viability without storing e
 
 **Progress Summary:**
 
+We began work on a simple front-end, defined our authentication option using Privy, and explored methods for integrating the LLM to communicate with the chatbot. Additionally, the Telegram chatbot has been configured and is currently in testing. Next week, we plan to connect it to the LLM and bring all the core components together.
+
 ## Current Architecture
 
 ### 1. Frontend (`index.html`)
@@ -150,14 +152,6 @@ Document ingestion pipeline that:
 - Uploads to Qdrant vector DB
 
 ---
-
-## Dependencies & Configuration
-
-### Installed
-
-- Flask + CORS
-- python-telegram-bot
-- python-dotenv
 
 ---
 
