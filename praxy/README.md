@@ -147,7 +147,6 @@ Document ingestion pipeline that:
 
 - Loads medical documents
 - Generates placeholder embeddings
-- Encrypts text via AES-GCM
 - Computes verification hashes
 - Uploads to Qdrant vector DB
 
