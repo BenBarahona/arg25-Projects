@@ -164,7 +164,30 @@ This week progress was made on the following:
 Week 3 was split into two parts: finalizing the frontend and user authentication flow using zkIDs and configuring the LLM we want to use, feeding it the data, and finalizing the API communications part so the frontend application can send and receive responses from it.
 Early on the week, we encountered a blocker with the telegram integration, so we decided to drop that functionality and create a simple chat interface on the application.  This chat route would only be accesible to verified users.  Users would have to first enter their medical credentials, and after a confirmation from a trusted authority, they would generate a zkproof that would then be verified by the server to grant access to the chat interface.
 
-*TODO: Add LLMM progress summary*
+**VLLM integration and training.**
+
+We used Meta-Llama 3.3 70B Instruct (Turbo Free) — a large instruction-tuned model optimized by Meta for conversational and reasoning tasks, hosted on Together AI.
+
+**Fine-Tuning Jobs**
+
+1. Conversational Fine-Tuning (JSONL path)
+
+- Used Together’s Supervised Fine-Tuning (SFT) pipeline.
+- Trained on a 50-example chat dataset formatted as messages (system / user / assistant).
+- Objective: specialize the model to respond as a clinical assistant for adult sore-throat cases at Hospital Escuela Universitario (HEU), Tegucigalpa, Honduras.
+
+2. Tokenized Fine-Tuning (Parquet path)
+
+- Converted the same dataset into a tokenized Parquet format (input_ids, attention_mask, labels).
+- Applied assistant-only loss (only assistant tokens contribute to training).
+- Used for experimentation with Together’s tokenized fine-tune interface to verify masking and tokenizer alignment.
+
+**Dataset**
+
+ - Link: [hn_heu_sore_throat_50_messages.jsonl](https://github.com/BenBarahona/invisible_garden_praxy/blob/main/services/gateway/training/conversational/data.jsonl)
+ - Content: 50 realistic doctor-patient prompts covering Centor/FeverPAIN scoring, RADT use, antibiotic selection, allergy cases, and red-flag  referrals.
+ - Language: English (en-US)
+ - Context: Adult sore-throat management protocols adapted for Honduras / HEU overlay.
 
 
 ## Final Wrap-Up
