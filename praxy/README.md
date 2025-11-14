@@ -34,6 +34,9 @@ Todas las interacciones se encuentran **cifradas** y sólo se pueden **desencrip
 - **Python** - Backend development
 - **Stylus** - Smart Contract development
 - **Privy & Semaphore** - Account Abstraction and user authentication
+- **TogetherAI** - API for LLM connection and training
+- **FastAPI** - Python backend for API construction
+- 
 
 ## Objectives
 
@@ -205,6 +208,8 @@ _After Week 3, summarize your final state: deliverables, repo links, and outcome
 PraxY represents a transformative step toward a resilient, intelligent healthcare ecosystem. Through AI replication of medical expertise and blockchain-based integrity protection, it bridges the gap between human experience and digital precision.
 
 By integrating encrypted communication, zero-knowledge verification, and continuous learning, PraxY not only prevents medical errors but also elevates the entire standard of care.
+
+- Learned how to integrate account abstraction and use it in conjunction with Semaphore to build a flow where a user can access a resource using zero-knowledge proofs without revealing their identity. My main takeaway was understanding the full implementation: linking commitments to an identity, generating the proof, and finally verifying it. I also gained new knowledge about account abstraction itself—how it works and how it can be implemented using the frontend skills I already have.
 
 ## Next Steps
 
