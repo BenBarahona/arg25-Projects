@@ -211,6 +211,11 @@ By integrating encrypted communication, zero-knowledge verification, and continu
 
 - Learned how to integrate account abstraction and use it in conjunction with Semaphore to build a flow where a user can access a resource using zero-knowledge proofs without revealing their identity. My main takeaway was understanding the full implementation: linking commitments to an identity, generating the proof, and finally verifying it. I also gained new knowledge about account abstraction itself—how it works and how it can be implemented using the frontend skills I already have.
 
+Challenges
+
+Training an AI assistant for each specific medical specialty presents a major challenge due to the breadth, depth, and variability of clinical data required. Every domain—cardiology, infectious disease, psychiatry, and beyond—demands large, high-quality datasets that capture both clinical nuance and regional practice differences. These data are often fragmented, inconsistently labeled, or restricted by privacy regulations, making it difficult to achieve representative coverage. As a result, developing reliable models for each area of medicine requires careful curation, secure data sharing, and domain-specific fine-tuning strategies that balance accuracy, ethics, and patient confidentiality.
+
+
 ## Next Steps
 
 _If you plan to continue development beyond ARG25, what’s next?_
